@@ -8,8 +8,21 @@
 	<h2>Drawing</h2>
 	<p>Going to try to draw 🤷‍♀️</p>
 	
-	<canvas id="canvas" height="400" width="500">
-    	</canvas>
-   	<script src="board.js"></script>
+	<script>
+	function draw() {
+		const ctx = canvas.getContext('2d');
+
+    		// set line stroke and line width
+		ctx.strokeStyle = 'red';
+		ctx.lineWidth = 5;
+
+		// draw a red line
+		ctx.beginPath();
+		ctx.moveTo(100, 100);
+		ctx.lineTo(300, 100);
+		ctx.stroke();
+	}
+	draw();
+	</script>
 </body>
 </html>
